@@ -5,16 +5,16 @@ const Firebase = require('firebase-admin')
 const serviceAccount = require("E:\\twitter-api-master\\ayang-zee-firebase-adminsdk-4a8v0-667e425f7d.json")
 
 const T = new Twit({
-  consumer_key: 'fUQifvicN8e4WCateHss73yJQ',
-  consumer_secret: 'CXqRMmwlYU4L6odv2DhxhwWAXnQq6jxBt1ZO2frZ8DZ2gcPibS',
-  access_token: '1126042316026703872-V36xr1m39Sy5xJedgzzma1gMFXRtQY',
-  access_token_secret: 'aLO6jampwJh1uTLQsO77OfTkI57pz1gBNTTFA9MaDla6Y',
+  consumer_key: 'uDyZoj9dPAL5TVGyge37n7Z1r',
+  consumer_secret: '2IpJ3IVSYCWC1i9OtotuUoRR66AnKarnOsNcZqHrT1VAd4jdGE',
+  access_token: '1126042316026703872-ZmuJFHJZlSgT1m8qtqYW6P0FbrKyXg',
+  access_token_secret: '5l0U4HybKjZsVkTsstz6EZtLHXh7WQwzC7te8d5LYH0xN',
   timeout_ms: 60 * 1000
 })
 
 Firebase.initializeApp({
   credential: Firebase.credential.cert(serviceAccount),
-  databaseURL: process.env.FIREBASE_DB_URL
+  databaseURL: 'https://ayang-zee-default-rtdb.asia-southeast1.firebasedatabase.app/'
 })
 const db = Firebase.database()
 const ref = db.ref("/tweetData")
