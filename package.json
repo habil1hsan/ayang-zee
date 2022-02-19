@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/habil1hsan/twitter-api/issues"
   },
-  "homepage": "https://github.com/habil1hsan/twitter-api#readme"
+  "homepage": "https://github.com/habil1hsan/twitter-api#readme",
+  "scripts": {
+    "start": "node index.js"
+  },
 }
