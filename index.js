@@ -2,7 +2,7 @@ require('dotenv').config()
 const Twit = require('twit')
 const CronJob = require('cron').CronJob
 const Firebase = require('firebase-admin')
-const serviceAccount = require("../app/ayang-zee-firebase-adminsdk-4a8v0-667e425f7d.json")
+const serviceAccount = require("../app/ayang-zee-firebase-adminsdk-4a8v0-24d62a3f99.json")
 
 const T = new Twit({
   consumer_key: 'uDyZoj9dPAL5TVGyge37n7Z1r',
